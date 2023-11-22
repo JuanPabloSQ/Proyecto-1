@@ -167,7 +167,7 @@ body{
 .link-footer{
     display: flex;
     justify-content: space-between;
-    margin: 20px 100px;
+    margin: 20px;
 }
 .list-footer{
     list-style-type: none;
@@ -190,4 +190,107 @@ hr{
 }
 .background-hr{
     background-color: white;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        margin: 10px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .banner > li {
+        display: flex;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .jumbotron{
+        display: block;
+        margin: 2px;
+    }
+    .jumbotron-imagen{
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    .blog-box{
+        margin: 20px;
+    }
+    .second-jumbotron{
+        display: block;
+    }
+    .derechos{
+        margin: 20px;
+    }
+
+    .jumbotron-text,
+    .jumbotron-imagen,
+    .blog,
+    .second-jumbotron-text,
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron-text,
+    .jumbotron-imagen,
+    .second-jumbotron-text {
+        margin: 20px;
+    }
+    .second-jumbotron-imagen,
+    .guitar-imagen,
+    .person-imagen,
+    .blog-imagen-1,
+    .blog-imagen-2,
+    .blog-imagen-3 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .input-mail {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .input-send {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .list-footer {
+        margin: 0px;
+    }
+
+    .blog-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .blog-imagen-1,
+    .blog-imagen-2,
+    .blog-imagen-3 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .link-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    margin: 20px
+    }
+   
+    .list-footer{
+    padding: 0;
+    }
+    .list-footer > li{
+    margin: 0px;
+    }
 }
