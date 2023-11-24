@@ -4,6 +4,13 @@ body{
 .white-letter{
     color: white; 
 }
+.nav-button{
+    display:none;
+}
+.button-nav{
+    margin-top: 20px;
+    margin-left: 10px;
+}
 .banner{
     margin: 30px 80px 30px 80px;
     list-style-type: none;
@@ -103,15 +110,40 @@ body{
 }
 .blog-title2{
     font-size:medium;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top:10px;
+    margin-right: 20px;
 }
 .blog-title1{
     font-size:large;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .blog-p{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(131,136,144);
+}
+.flex-face-blog{
+    display:flex;
+    justify-content:start;
+}
+.face-blog{
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.p-view{
+    font-size: smaller;
+    margin: 5px;
+}
+.p-time-view{
+    font-size: smaller;
+    color: rgb(131,136,144);
+    margin: 5px;
 }
 .blog-box{
     border: solid;
@@ -192,16 +224,13 @@ hr{
     background-color: white;
 }
 
-
-
-
 @media only screen and (max-width: 600px) {
     .banner {
-        margin: 10px;
-        display:flex;
-        justify-content: center;
+        display: none;
     }
-
+    .nav-button{
+        display:block;
+    }
     .banner > li {
         display: flex;
         text-align: center;
@@ -226,7 +255,6 @@ hr{
     .derechos{
         margin: 20px;
     }
-
     .jumbotron-text,
     .jumbotron-imagen,
     .blog,
@@ -235,7 +263,6 @@ hr{
         flex-direction: column;
         align-items: center;
     }
-
     .jumbotron-text,
     .jumbotron-imagen,
     .second-jumbotron-text {
@@ -243,42 +270,32 @@ hr{
     }
     .second-jumbotron-imagen,
     .guitar-imagen,
-    .person-imagen,
-    .blog-imagen-1,
-    .blog-imagen-2,
-    .blog-imagen-3 {
+    .person-imagen{
         width: 100%;
         max-width: 100%;
         height: auto;
     }
-
+    .blog-imagen-1,
+    .blog-imagen-2,
+    .blog-imagen-3{
+        width: 350px;
+        height: 200px;
+    }
     .input-mail {
         width: 100%;
         margin-right: 0;
     }
-
     .input-send {
         width: 100%;
         margin-top: 10px;
     }
-
     .list-footer {
         margin: 0px;
     }
-
     .blog-imagen {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    .blog-imagen-1,
-    .blog-imagen-2,
-    .blog-imagen-3 {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
     }
     .link-footer{
     display: flex;
@@ -286,7 +303,6 @@ hr{
     flex: 1 1 50%;
     margin: 20px
     }
-   
     .list-footer{
     padding: 0;
     }
